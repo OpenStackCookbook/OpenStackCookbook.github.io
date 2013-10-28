@@ -1,47 +1,199 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
 body {
-	font-family: monospace;
-	font-size: 12px;
-	color: #222222;
-	margin: 20px 10px 0px 20px;
-	text-align: left;
+  font-family: monospace;
+  font-size: 12px;
+  color: #222222;
+  margin: 20px 10px 0px 20px;
+  text-align: left;
 }
 .manheader {
-	font-family: monospace;
-	font-size: 12px;
-	margin: 10px 0px 0px 0px;
+  font-family: monospace;
+  font-size: 12px;
+  margin: 10px 0px 0px 0px;
 }
 h1 {
-	font-size: 12px;
-	font-weight: bold;
-	margin: 15px 0px 0px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 15px 0px 0px 0px;
 }
 .subtext {
-	margin: 0px 0px 10px 50px;
-	width: 575px;
+  margin: 0px 0px 10px 50px;
+  width: 575px;
 }
 .doublesubtext {
-	margin: 0px 0px 10px 70px;
-	width: 525px;
+  margin: 0px 0px 10px 70px;
+  width: 525px;
 }
 .triplesubtext {
-	margin: 0px 0px 10px 90px;
-	width: 475px;
+  margin: 0px 0px 10px 90px;
+  width: 475px;
 }
 .bottomcut {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 a, a.active, a.visited, a.hover {
-	color: #222222;
-	text-decoration: underline;
+  color: #222222;
+  text-decoration: underline;
 }
 .footer {
-	margin: 10px 0px 20px 0px;
-	color: #CCCCCC;
+  margin: 10px 0px 20px 0px;
+  color: #222222;
 }
 .linkfloater {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	padding: 5px;
-	text-align: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  text-align: right;
+}
+
+p { margin: 1em 0; }
+
+a         { color: #222222; }
+a:hover   { color: #222222; }
+a:visited { color: #222222; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+  width: 575px;
+}
+
+ul.posts li {
+  width: 525px;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  font-family: monospace;
+  font-size: 12px;
+  color: #222222;
+  margin: 20px 10px 0px 20px;
+  text-align: left;
+}
+
+.site .header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site .header h1.title {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.site .header h1.title a {
+  color: #222222;
+}
+
+.site .header h1.title a:hover {
+  color: #222222;
+}
+
+.site .header a.extra {
+  color: #222222;
+  margin-left: 1em;
+}
+
+.site .header a.extra:hover {
+  color: #222222;
+}
+
+.site .meta {
+  color: #222222;
+}
+
+.site .footer {
+  font-size: 80%;
+  color: #222222;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.site .footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.site .footer .contact a {
+  color: #222222;
+}
+
+.site .footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.site .footer .rss img {
+  border: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #222222;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #222222;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #222222;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #222222;
 }
