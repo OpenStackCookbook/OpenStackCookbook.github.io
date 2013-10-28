@@ -1,0 +1,5 @@
+name: The OpenStack Cookbook
+description: The OpenStack Cookbook - Grizzly / Havana release
+url: http://openstackcookbook.com
+pygments: true
+paginate: 10
