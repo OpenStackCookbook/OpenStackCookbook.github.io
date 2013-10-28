@@ -3,28 +3,27 @@ layout: default
 title: OpenStackCookbook(7) - Updated to provide a hands on approach to working with OpenStack Havana - Linux man page
 ---
 <h1 >Havana Chapters Posts <a id="rss_header" href="/rss/feed.xml">(rss)</a></h1>
-<ul class="posts">
+<ul class="subtext">
 	{% for post in paginator.posts %}
 	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
 </div>
 <!-- Pagination links -->
-<div class="navigation">
+<div class="footer">
 	{% if paginator.previous_page %}
 	{% if paginator.previous_page == 1 %}
-	<a href="/" class="previous">Previous</a>
+	<a href="/">Previous</a>
 	{% else %}
-	<a href="/page{{ paginator.previous_page }}"
-		class="footer">Previous</a>
+	<a href="/page{{ paginator.previous_page }}">Previous</a>
 	{% endif %}
 	{% else %}
-	<span class="footer">&nbsp;</span>
+	<span>&nbsp;</span>
 	{% endif %}
-	<span class="page-number ">Page: {{ paginator.page }} of {{paginator.total_pages }}</span>
+	<span>Page: {{ paginator.page }} of {{paginator.total_pages }}</span>
 	{% if paginator.next_page %}
-	<a href="/page{{ paginator.next_page }}" class="footer">Next</a>
+	<a href="/page{{ paginator.next_page }}">Next</a>
 	{% else %}
-	<span class="footer">&nbsp;</span>
+	<span>&nbsp;</span>
 	{% endif %}
 </div>
