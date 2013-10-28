@@ -1,0 +1,27 @@
+<h1 >Havana Chapters Posts <a id="rss_header" href="/rss/feed.xml">(rss)</a></h1>
+<ul class="posts">
+	{% for post in paginator.posts %}
+	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+</div>
+<!-- Pagination links -->
+<div class="navigation">
+	{% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+	<a href="/" class="previous">Previous</a>
+	{% else %}
+	<a href="/page{{ paginator.previous_page }}"
+		class="previous">Previous</a>
+	{% endif %}
+	{% else %}
+	<span class="previous">&nbsp;</span>
+	{% endif %}
+	<span class="page-number ">Page: {{ paginator.page }} of {{paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+	<a href="/page{{ paginator.next_page }}" class="next">Next</a>
+	{% else %}
+	<span class="next ">&nbsp;</span>
+	{% endif %}
+</div>
+
