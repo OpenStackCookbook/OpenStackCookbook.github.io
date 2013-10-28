@@ -1,2 +1,0 @@
-OpenStackCookbook.github.io
-===========================
