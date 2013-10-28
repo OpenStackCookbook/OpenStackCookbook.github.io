@@ -1,21 +1,25 @@
 ---
 layout: default
 title: OpenStackCookbook(7) - Errata
+category: errata
 ---
 
 <!-- This loops through the paginated posts -->
 <div id="home">
   <h1>Cookbook Errata</h1>
   <ul class="posts">
-	  {% for post in site.posts %}
-	    <li>
-	      <a href="{{ post.url }}">{{ post.title }}</a>
-	      <p>{{ post.excerpt }}</p>
-	    </li>
-	  {% endfor %}
+          {% for post in site.posts %}
+                {% for category in post.categories %}
+                        {% if category == page.category %}
+                            <li>
+                              <a href="{{ post.url }}">{{ post.title }}</a>
+                              <p>{{ post.excerpt }}</p>
+                            </li>
+                        {% endif %}
+                {% endfor %}
+          {% endfor %}
   </ul>
 </div>
-
 <!-- Pagination links -->
 <div class="pagination">
 	{% if paginator.previous_page %}
