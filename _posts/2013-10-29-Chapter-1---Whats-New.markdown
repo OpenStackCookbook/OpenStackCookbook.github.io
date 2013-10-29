@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1 - What's New"
+title: "Chapter 1 - What's New: OpenStack Keystone Identity Service"
 date: 2013-10-29 10:13:00
 categories: havana 
 ---
@@ -27,12 +27,17 @@ Ensure you are logged into the server that will become home to Keystone. In our 
 
 ### How to do it...###
 Log into the controller node and execute the following steps:
+
 1. To add the Ubuntu Cloud Archive, we add the repository as follows:
-	# Grizzly Goodness
+
 	sudo apt-get -y install ubuntu-cloud-keyring
-	echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/grizzly main" | sudo tee -a /etc/apt/sources.list.d/grizzly.list
-	echo "deb  http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/grizzly main" | sudo tee -a /etc/apt/sources.list.d/grizzly.list
+	
+	echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/havana main" | sudo tee -a /etc/apt/sources.list.d/havana.list
+	
+	echo "deb  http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/havana main" | sudo tee -a /etc/apt/sources.list.d/havana.list
+
 2. Before we can use this repository, we need to ensure we have the Ubuntu Cloud Archive Key. We add this key as follows:
+
 	sudo apt-get update
 	sudo apt-get -y install ubuntu-cloud-keyring
 

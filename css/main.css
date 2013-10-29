@@ -177,8 +177,7 @@ ul.posts span {
 }
 
 .post pre {
-  border: 1px solid #ddd;
-  background-color: #222222;
+  border: 1px;
   padding: 0 .4em;
   width: 575px;
 }
@@ -189,8 +188,8 @@ ul.posts span {
 }
 
 .post code {
-  border: 1px solid #ddd;
-  background-color: #222222;
+  border: 1px;
+  color: #222222;
   padding: 0 .2em;
   width: 575px;
 }
@@ -202,7 +201,7 @@ ul.posts span {
 
 /* terminal */
 .post pre.terminal {
-  border: 1px solid #000;
+  border: 1px;
   background-color: #222222;
   color: #FFF;
   width: 575px;
