@@ -203,3 +203,9 @@ ul.posts span {
   background-color: #222222;
   width: 575px;
 }
+
+.post blockquote {
+  border: 1px solid #000;
+  color: #222222;
+  width: 475px; 
+}
