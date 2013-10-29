@@ -109,7 +109,6 @@ ul.posts span {
 
 .site .header h1.title {
   display: inline-block;
-  margin-bottom: 2em;
 }
 
 .site .header h1.title a {
@@ -167,6 +166,16 @@ ul.posts span {
 /*****************************************************************************/
 
 /* standard */
+.post {
+  font-size: 115%;
+  font-family: monospace;
+  font-size: 12px;
+  color: #222222;
+  margin: 20px 10px 0px 20px;
+  text-align: left;
+  width: 575px;
+}
+
 .post pre {
   border: 1px solid #ddd;
   background-color: #222222;
@@ -175,7 +184,7 @@ ul.posts span {
 }
 
 .post ul, .post ol {
-  margin-left: 1.35em;
+  margin: 0px 0px 0px 15px;
   width: 575px;
 }
 
@@ -209,3 +218,18 @@ ul.posts span {
   color: #222222;
   width: 475px; 
 }
+
+.post h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 15px 0px 0px 0px;
+}
+
+.post h2 {
+  margin: 15px 0px 0px 0px;
+}
+
+.post h3 {
+  margin: 15px 0px 0px 0px;
+}
+

@@ -8,29 +8,33 @@ categories: havana
 # Chapter 1 - OpenStack Keystone Identity Service #
 
 In this chapter, the following sections have changed for the Havana release of OpenStack:
-* Creating a sandbox environment 
-* Configuring Ubuntu Cloud Archive
 
-> **Note:**
-> The intention of these chapters is to provide you with only the information and steps required to preform the corresponding sections of the book for the Havana release of OpenStack.
+- Configuring Ubuntu Cloud Archive
 
-## Creating a sandbox environment using VirtualBox and Vagrant ##
-To support the recipes in this book and provide a hands on environment where you can work with the recipes we discuss.
+The intention of these chapters is to provide you with only the information and steps required to preform the corresponding sections of the book for the Havana release of OpenStack.
 
-> **Tip:**
-> At the time of this update, the versions of softare are as follows:
-> * Vagrant: 1.3.5
-> * VirtualBox: 4.2.18
+## Configuring Ubuntu Cloud Archive ##
 
-> **Tip:**
-> It is assumed your computer will have at least 8GB of ram as well as the Intel VT-X or AMD-V support.
+Ubuntu 12.04 LTS, the release used in the OpenStack Cookbook provides a number of repositories for installing OpenStack. The standard repositoy is based on OpenStack Essex. The second edition of the book as published, shows you how to use the Ubuntu Cloud Archive to provide Grizzly. With the Havana release of OpenStack, the Ubuntu Cloud Archive also needs to be updated.
 
-1. Install VirtualBox from (http://www.virtualbox.org/)
-2. Install Vagrant from (http://vagrantup.com/)
-3. Once installed, we define our environment using a file called a *Vagrantfile*. To do this, run the following code:
 
-	mkdir ~/cookbook
-	cd ~/cookbook
-	vim Vagrantfile
+> Note:
+>
+> These recipies assume you are building by hand rather than using the completed scripts in the OpenStack Cookbook GitHub. If you are using the scripts from GitHub, this work has been done for you.
 
-4. 
+### Getting Started ###
+Ensure you are logged into the server that will become home to Keystone. In our example this is the 'controller'. This server needs to be accessible to the remainder of your OpenStack hosts.
+
+### How to do it...###
+Log into the controller node and execute the following steps:
+1. To add the Ubuntu Cloud Archive, we add the repository as follows:
+	# Grizzly Goodness
+	sudo apt-get -y install ubuntu-cloud-keyring
+	echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu precise-updates/grizzly main" | sudo tee -a /etc/apt/sources.list.d/grizzly.list
+	echo "deb  http://ubuntu-cloud.archive.canonical.com/ubuntu precise-proposed/grizzly main" | sudo tee -a /etc/apt/sources.list.d/grizzly.list
+2. Before we can use this repository, we need to ensure we have the Ubuntu Cloud Archive Key. We add this key as follows:
+	sudo apt-get update
+	sudo apt-get -y install ubuntu-cloud-keyring
+
+###Summary###
+This post covers the changes needed to ensure you are using the Havana release of OpenStack with the OpenStack Cookbook.
