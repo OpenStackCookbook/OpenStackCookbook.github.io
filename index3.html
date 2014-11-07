@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+	generated in 0.264 seconds
+	44853 bytes batcached for 300 seconds
+-->
+<head>
+	<meta charset="UTF-8" />
+	<title>OpenStack Cloud Computing Cookbook | http://www.openstackcookbook.com/</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://openstackcookbook.wordpress.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="OpenStack Cloud Computing Cookbook &raquo; Feed" href="http://openstackcookbook.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="OpenStack Cloud Computing Cookbook &raquo; Comments Feed" href="http://openstackcookbook.wordpress.com/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/_static/??-eJx9kNFuwyAMRX9ozGrURdrD1G8hxCVODUbBUZR+/Uirtqu68oJ80Tm2AZZknETFqBBmk3j2FDPkQIxrmmREp8/p0+X8Af9rTCfMMKIm607mkl7wjsU/BPEee5nVHIVZFlio91id4WTCch+S1Y0I2JNFxlCwmhZSe7O2cigLvu6mQ+mTIc0dnDuMboCsK2OtLwYZ6XpeMYIoSoXM96LmexTD4qySxKdgjmxpqqkTbn9ZSg+F+hPfvWvYg2fpLG/AIfzs9ruvpm2a9nv8BTUVwtU=' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyFjd0KwjAMRl/IrttQ8EZ8lv1kJbVtapOu6NNbQUFR2FVCcr7v6BLVREEgiLasPY3oQGWGNJh6UxgWaizvdOUwTC7PwE/QXjOk22tsAsqjSYNA4zG84Q9rJBYPzFX55/utwrAilE3MgsRhuqgEjPef1tGRUdFlg4F13Q3MlEUt5BwVXXA2IDVz9qdu37aHY9e3vX0APQlvpA=='></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://openstackcookbook.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/4jH4K' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="OpenStack Cloud Computing Cookbook" />
+<meta property="og:description" content="http://www.openstackcookbook.com/" />
+<meta property="og:url" content="http://openstackcookbook.wordpress.com/" />
+<meta property="og:site_name" content="OpenStack Cloud Computing Cookbook" />
+<meta property="og:image" content="http://0.gravatar.com/blavatar/69ff60c19b0f6c31355fc4977a440935?s=200" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8189eba6a3fe1e8ad172f5789b73c596?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/8189eba6a3fe1e8ad172f5789b73c596?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://0.gravatar.com/blavatar/69ff60c19b0f6c31355fc4977a440935?s=114" />
+<link rel='openid.server' href='http://openstackcookbook.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://openstackcookbook.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://openstackcookbook.wordpress.com/osd.xml" title="OpenStack Cloud Computing Cookbook" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="OpenStack Cloud Computing Cookbook" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="http://www.openstackcookbook.com/" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://openstackcookbook.wordpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/8189eba6a3fe1e8ad172f5789b73c596?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="OpenStack Cloud Computing Cookbook on WordPress.com" />
+<meta name="description" content="http://www.openstackcookbook.com/ (by Kevin Jackson)" />
+	<style type="text/css">
+		#title h1,
+	#title h1 a,
+	#title p {
+		color: #blank !important;
+	}
+		/* Remove title text */
+	#title h1,
+	#title p {
+		display: none;
+	}
+	</style>
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=63799162&post=0&lang=en&date=1414763976&ip=162.13.41.149&url=http://openstackcookbook.wordpress.com/';i.id='botd2';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript" id="custom-fonts-js">
+(function(doc) {
+	
+	var config = {"kitId":"ktk0jor","scriptTimeout":3000},
+	h=doc.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+="wf-inactive"},config.scriptTimeout);var tk=doc.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=doc.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s);
+})(document);
+</script>
+<style type="text/css" id="custom-fonts-css">/* Site Title */ .wf-loading #title h1 { visibility: hidden; } .wf-active #title h1 { font-family: droid-sans-mono-1,droid-sans-mono-2,Georgia,"Times New Roman",Times,serif; font-style: normal; font-weight: 400; font-variant: normal; font-size: 21px; } 
+/* Headings */ .wf-loading h1,.wf-loading h2,.wf-loading h3,.wf-loading h4,.wf-loading h5,.wf-loading h6 { visibility: hidden; } .wf-active h1,.wf-active h2,.wf-active h3,.wf-active h4,.wf-active h5,.wf-active h6 { font-family: droid-sans-mono-1,droid-sans-mono-2,Georgia,"Times New Roman",Times,serif; font-style: normal; font-weight: 400; font-variant: normal; } .wf-loading h1 { visibility: hidden; } .wf-active h1 { font-size: 18px; } .wf-loading h2 { visibility: hidden; } .wf-active h2 { font-size: 15px; } .wf-loading h3 { visibility: hidden; } .wf-active h3 { font-size: 12px; } .wf-loading h4 { visibility: hidden; } .wf-active h4 { font-size: 11px; } .wf-loading h5 { visibility: hidden; } .wf-active h5 { font-size: 11px; } .wf-loading h6 { visibility: hidden; } .wf-active h6 { font-size: 11px; } .wf-loading .archives-title h2 { visibility: hidden; } .wf-active .archives-title h2 { font-family: droid-sans-mono-1,droid-sans-mono-2,Georgia,"Times New Roman",serif; font-style: normal; font-weight: 400; font-variant: normal; font-size: 14px; } .wf-loading h2.title { visibility: hidden; } .wf-active h2.title { font-size: 12px; } 
+/* Body Text */ .wf-loading body,.wf-loading input,.wf-loading textarea { visibility: hidden; } .wf-active body,.wf-active input,.wf-active textarea { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,Tahoma,sans-serif; font-variant: normal; } .wf-loading #header { visibility: hidden; } .wf-active #header { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,sans-serif; font-variant: normal; } .wf-loading #content #title p { visibility: hidden; } .wf-active #content #title p { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,Georgia,"Times New Roman",sans-serif; font-variant: normal; } .wf-loading #maincontent { visibility: hidden; } .wf-active #maincontent { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,Tahoma,sans-serif; font-variant: normal; } .wf-loading #content,.wf-loading #content input[type=text],.wf-loading #content textarea { visibility: hidden; } .wf-active #content,.wf-active #content input[type=text],.wf-active #content textarea { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,Tahoma,sans-serif; font-variant: normal; } .wf-loading .pagination a,.wf-loading .pagination span { visibility: hidden; } .wf-active .pagination a,.wf-active .pagination span { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,Tahoma,Arial,Helvetica,sans-serif; font-variant: normal; } .wf-loading .sidebar { visibility: hidden; } .wf-active .sidebar { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,tahoma,sans-serif; font-variant: normal; } .wf-loading #footer { visibility: hidden; } .wf-active #footer { font-family: ff-basic-gothic-web-pro-1,ff-basic-gothic-web-pro-2,Tahoma,sans-serif; font-variant: normal; } 
+</style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s2.wp.com/?custom-css=1&#038;csblog=4jH4K&#038;cscache=6&#038;csrev=17" />
+		</head>
+<body class="home blog mp6 typekit-enabled two-column content-sidebar highlander-enabled highlander-light">
+
+<div id="wrapper">
+
+<div id="header">
+	<div id="header_inner">
+		<ul id="menu-main-menu" class="nav sf-menu"><li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a href="http://www.openstackcookbook.com/index2.html">Home</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="http://www.openstackcookbook.com/recipes">Recipes</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://openstackcookbook.wordpress.com/about/">Buy The Book</a></li>
+</ul>		<form id="search-form" role="search" method="get" action="http://openstackcookbook.wordpress.com/">
+			<input type="text" value="Search: type, hit enter" onfocus="if (this.value == 'Search: type, hit enter' ) {this.value = '';}" onblur="if (this.value == '' ) {this.value = 'Search: type, hit enter';}" name="s" id="s" />
+			<input type="submit" id="search-submit" value="Search" />
+		</form>
+	</div>
+</div>
+<div id="content">
+
+		<div id="title">
+		<h1><a href="http://openstackcookbook.wordpress.com/">OpenStack Cloud Computing Cookbook</a></h1>
+		<p>http://www.openstackcookbook.com/</p>
+	</div>
+
+<h1>NAME</h1>
+<p class="subtext">
+<a href = "http://www.amazon.com/OpenStack-Cloud-Computing-Cookbook-Jackson/dp/1782167587/ref=sr_1_1?s=books&ie=UTF8&qid=1381417115&sr=1-1">OpenStack Cookbook</a> - A tactical, hands on approach to working with OpenStack Grizzly
+</p>
+
+<h1>SYNOPSIS</h1>
+<p class="subtext">
+cookbook [--buy hard_copy | ebook] [--version grizzly | havana] [--errata] [--code] [--notify] [--author Kevin | Cody]
+</p>
+
+<h1>SUMMARY</h1>
+<p class="subtext">
+The OpenStack Cookbook is the definitive source of information for cloud 
+practitioners. It provides step by step recipes for installing, configuring, 
+and managing the OpenStack Core projects:
+</p>
+<p class="subtext">
+- Keystone<br>
+- Neutron<br>
+- Cinder<br>
+- Nova<br>
+- Swift<br>
+- Horizon<br>
+- Glance
+</p>
+<p class="subtext">
+Additionally the OpenStack Cookbook provides cookbooks for:<br><br>
+- Highly available OpenStack Cloud infrastructure<br>
+- Cloud scale monitoring<br>
+- DevOps Integrated OpenStack Cloud infrastructure deployment
+</p>
+<h1>OPTIONS</h1>
+<p class="subtext">
+--buy hard_copy
+</p>
+<p class="doublesubtext">
+<a href = "http://www.amazon.com/OpenStack-Cloud-Computing-Cookbook-Jackson/dp/1782167587/ref=sr_1_1?s=books&ie=UTF8&qid=1381417115&sr=1-1">Amazon</a><br />
+<a href = "http://www.packtpub.com/openstack-cloud-computing-cookbook-second-edition/book">Packt</a>
+</p>
+<p class="subtext">
+--buy ebook
+</p>
+<p class="doublesubtext">
+<a href = "http://www.packtpub.com/openstack-cloud-computing-cookbook-second-edition/book">Packt</a><br />
+<a href = "http://www.amazon.com/OpenStack-Computing-Cookbook-Second-ebook/dp/B00FZMREUM/ref=sr_1_3_title_0_main?s=books&ie=UTF8&qid=1382972794&sr=1-3&keywords=Cody+Bunch">Amazon</a>
+</p>
+<p class="subtext">
+--version
+</p>
+<p class="doublesubtext">
+This version of the OpenStack cookbook was built using the Grizzly release of OpenStack
+</p>
+<p class="subtext">
+--code
+</p>
+<p class="doublesubtext">
+All of the code and commands used in the book can be found<br />
+on GitHub in the following repositories:
+</p>
+<p class="triplesubtext">
+* <a href="https://github.com/uksysadmin/OpenStackCookBook">All examples</a><br />
+* <a href="https://github.com/bunchc/Cookbook_Razor">DevOps Integrated Cloud Build</a><br />
+</p>
+<p class="subtext">
+--version grizzly
+</p>
+<p class="doublesubtext">
+The current print release of the book is based on OpenStack Grizzly.
+</p>
+<p class="subtext">
+--version havana
+</p>
+<p class="doublesubtext">
+Additional chapters related to the <a href="/havana.html">Havana</a> release of OpenStack can be found <a href="/havana.html">here</a>
+</p>
+<p class="subtext">
+--notify
+</p>
+<p class="doublesubtext">
+Watch this page, or sign up on one of the following to be notified of progress, release dates, and more. <br />
+- <a href="https://www.google.com/+OpenStackCookbook">Google Plus</a><br />
+- <a href="https://www.facebook.com/OpenStackCloudComputingCookbook?bookmark_t=page">Facebook</a><br />
+- <a href="http://about.me/openstackcookbook">About.Me</a>
+</p>
+<p class="subtext">
+--author Kevin
+</p>
+<p class="doublesubtext">
+ABOUT<br />
+* http://about.me/kevjackson<br /><br />
+
+HISTORY<br />
+* Rackspace, UK<br />
+- Senior Cloud Architect, DevOps & Automation Advisory<br />
+* Trader Media Group (autotrader.co.uk)<br />
+- Infrastructure Architect<br />
+- IT Systems Manager<br />
+- Senior Systems Administrator<br />
+* Genaware<br />
+- Systems Administrator<br />
+* Power X Ltd<br />
+- Unix Administrator<br />
+</p>
+<p class="subtext">
+--author Cody
+</p>
+<p class="doublesubtext">
+PODCAST<br />
+* #vBrownBag - http://bit.ly/BrownbagPodcast<br /><br />
+
+HISTORY<br />
+* Rackspace<br />
+- Principal Architect, Private Cloud (OpenStack)<br />
+- Principal Architect, Private Cloud (VMware)<br />
+- Virtualization Engineer<br />
+- Windows System Engineer
+</p>
+
+<h1>SEE ALSO</h1>
+<p class="subtext">
+* E-mail:      book at openstackcookbook dot com<br />
+* G+:     <a href="https://plus.google.com/u/0/b/118130448899475645695/118130448899475645695/about">OpenStack Cookbook</a><br />
+* IRC:         e-vad or itarchitectkev on irc.freenode.net
+</p>
+
+</body>
+</html>
